@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
+  get '/users/:id' => 'users#show', as: :user
 
   get '/login'     => 'sessions#new'
   post '/login'    => 'sessions#create'
