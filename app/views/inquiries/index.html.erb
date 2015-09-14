@@ -31,7 +31,7 @@
 						<td><%= inquiry.reason %></td>
 						<td><%= inquiry.networth %></td>
 						<td><%= inquiry.liquidity %></td> -->
-						<td><%= inquiry.created_at.to_date %></td>
+						<td><%= inquiry.created_at.strftime("%b %d, %Y") %></td>
 						<td><%= link_to 'Show', inquiry_path(inquiry) %></td>
 					</tr>
 				<% end %>
