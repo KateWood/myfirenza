@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'inquiries/index'
+
+  get 'inquiries/new'
+
+  get 'inquiries/create'
+
+  get 'inquiries/show'
+
+  get 'inquiries/update'
+
+  get 'inquiries/destroy'
+
   get '/login'     => 'sessions#new'
   post '/login'    => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
