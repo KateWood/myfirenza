@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'pages/main'
+  get 'pages/home', as: :home
 
   resources :inquiries
 
