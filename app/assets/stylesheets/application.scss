@@ -17,8 +17,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+nav > div > div > p {
+	padding-top: 14px;
+}
+
+.no-access {
+	margin-top: 50px;
+}
+
 .slide {
 	max-height: 100vh;
+	padding-top: 5vh;
 }
 
 .right {
@@ -37,13 +46,24 @@
 	margin-left: auto;
 }
 
+#main {
+	background-color: #B3B3B3;
+}
+
 #main > img {
 	width: 100vw;
 	margin: auto;
 }
 
+#contact {
+	background-color: #E4332E;
+	padding-bottom: 5vh;
+}
+
 #contact > h1, #contact > h4 {
 	text-align: center;
 }
+
+
 
 

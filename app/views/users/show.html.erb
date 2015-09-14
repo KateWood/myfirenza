@@ -7,11 +7,13 @@
 	</div>
 
 	<div class="slide" id="contact">
-		<%= render 'form' %>
+		<%= render 'contact' %>
 	</div>
 
 <% else %>
 
-	<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	<div class="no-access container">
+		<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	</div>
 
 <% end %>
