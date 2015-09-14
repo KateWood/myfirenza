@@ -1,15 +1,16 @@
-<%= render 'nav' %>
+<%= render 'pages/nav' %>
 
 <% if @user == current_user %>
-	
-	<div class="right">
-		Logged in as: <%= current_user.name %> <%= link_to 'Log Out', logout_path, method: :delete %>
+
+	<div class="main-link container">
+		<%= link_to (image_tag 'default.png'), home_path %>
+		<%= link_to 'View main page', home_path %>
 	</div>
-	<h1>Users#show</h1>
-	<p>Find me in app/views/users/show.html.erb</p>
 
 <% else %>
 
-	<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	<div class="no-access container">
+		<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	</div>
 
 <% end %>
