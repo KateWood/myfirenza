@@ -17,6 +17,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.slide {
+	max-height: 100vh;
+}
+
 .right {
 	text-align: right;
 	padding-right: 3vw;
@@ -33,8 +37,13 @@
 	margin-left: auto;
 }
 
-#slide1 > img {
+#main > img {
 	width: 100vw;
+	margin: auto;
+}
+
+#contact > h1, #contact > h4 {
+	text-align: center;
 }
 
 
