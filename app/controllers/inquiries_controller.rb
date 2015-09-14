@@ -7,11 +7,18 @@ class InquiriesController < ApplicationController
 	end
 
 	def new
-
+		@inquiry = Inquiry.new
 	end
 
 	def create
-
+		@inquiry = Inquiry.new(inquiry_params)
+		respond_to do |format|
+			if @inquiry.save
+				format.html { notice: 'Information was successfully submitted.' }
+			else
+				format.html { notice: 'Something went wrong.' }
+			end
+		end
 	end
 
 	def show
