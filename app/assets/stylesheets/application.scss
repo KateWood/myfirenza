@@ -49,6 +49,19 @@ nav > div > div > p {
 	text-align: center;
 }
 
+.large {
+	width: 400px;
+	height: 150px;
+}
+
+.inquiry-form {
+	width: 200px;
+}
+
+.inquiry-form-small {
+	width: 80px;
+}
+
 .container-fluid > form {
 	width: 153px;
 	margin-top: 5vh;
@@ -66,9 +79,12 @@ nav > div > div > p {
 	padding-bottom: 5vh;
 }
 
-#contact > h1, #contact > h4 {
+#contact > h1, #contact > h4, #contact > h6 {
 	text-align: center;
 }
+
+
+
 
 
 

@@ -12,12 +12,10 @@ class InquiriesController < ApplicationController
 
 	def create
 		@inquiry = Inquiry.new(inquiry_params)
-		respond_to do |format|
-			if @inquiry.save
-				format.html { notice: 'Information was successfully submitted.' }
-			else
-				format.html { notice: 'Something went wrong.' }
-			end
+		if @inquiry.save
+			redirect_to home_path
+		else
+			render :new
 		end
 	end
 
