@@ -1,9 +1,9 @@
 <%= render 'nav' %>
 
 <% if @user == current_user %>
-	
-	<%= render 'main' %>
 
+	<%= render 'main' %>
+	
 <% else %>
 
 	<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
