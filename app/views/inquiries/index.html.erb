@@ -1,51 +1,63 @@
-<div class="container-fluid">
+<%= render 'pages/nav' %>
 
-	<h1>All Inquiries</h1>
+<% if current_user %>
 
-	<div class="table-responsive">
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Email Address</th>
-					<!-- <th>Phone Number</th>
-					<th>City of Interest</th>
-					<th>State</th>
-					<th>Zip Code</th>
-					<th>Reason for Interest</th>
-					<th>Networth</th>
-					<th>Liquidity</th> -->
-					<th>Date of Inquiry</th>
-				</tr>
-			</thead>
-			<tbody>
-				<% if @inquiries %>
-					<% @inquiries.each do |inquiry| %>
-						<tr>
-							<td><%= inquiry.first_name %></td>
-							<td><%= inquiry.last_name %></td>
-							<td><%= mail_to inquiry.email %></td>
-							<!-- <td><%= inquiry.phone %></td>
-							<td><%= inquiry.city_of_interest %></td>
-							<td><%= inquiry.state %></td>
-							<td><%= inquiry.zip %></td>
-							<td><%= inquiry.reason %></td>
-							<td><%= inquiry.networth %></td>
-							<td><%= inquiry.liquidity %></td> -->
-							<td><%= inquiry.created_at.strftime("%b %d, %Y") %></td>
-							<td><%= link_to 'Show', inquiry_path(inquiry), :class => "btn btn-primary" %></td>
-						</tr>
+	<div class="container-fluid down">
+
+		<h1>All Inquiries</h1>
+
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email Address</th>
+						<!-- <th>Phone Number</th>
+						<th>City of Interest</th>
+						<th>State</th>
+						<th>Zip Code</th>
+						<th>Reason for Interest</th>
+						<th>Networth</th>
+						<th>Liquidity</th> -->
+						<th>Date of Inquiry</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% if @inquiries %>
+						<% @inquiries.each do |inquiry| %>
+							<tr>
+								<td><%= inquiry.first_name %></td>
+								<td><%= inquiry.last_name %></td>
+								<td><%= mail_to inquiry.email %></td>
+								<!-- <td><%= inquiry.phone %></td>
+								<td><%= inquiry.city_of_interest %></td>
+								<td><%= inquiry.state %></td>
+								<td><%= inquiry.zip %></td>
+								<td><%= inquiry.reason %></td>
+								<td><%= inquiry.networth %></td>
+								<td><%= inquiry.liquidity %></td> -->
+								<td><%= inquiry.created_at.strftime("%b %d, %Y") %></td>
+								<td><%= link_to 'Show', inquiry_path(inquiry), :class => "btn btn-primary" %></td>
+							</tr>
+						<% end %>
 					<% end %>
-				<% end %>
-				<tr>
-					<td><%= link_to 'Back', user_path(current_user), :class => "btn btn-default"  %></td><td></td><td></td><td></td><td></td>
-				</tr>
-			</tbody>
-		</table>
+					<tr>
+						<td><%= link_to 'Back', user_path(current_user), :class => "btn btn-default"  %></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
 	</div>
 
-</div>
+<% else %>
+
+	<div class="no-access container">
+		<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	</div>
+
+<% end %>
 
 
 

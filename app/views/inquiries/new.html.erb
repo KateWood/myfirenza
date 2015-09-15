@@ -1,2 +1,17 @@
-<h1>Inquiries#new</h1>
-<p>Find me in app/views/inquiries/new.html.erb</p>
+<%= render 'pages/nav' %>
+
+<% if current_user %>
+
+	<div class="container down">
+
+		<% render 'form' %>
+
+	</div>
+
+<% else %>
+
+	<div class="no-access container">
+		<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	</div>
+
+<% end %>
