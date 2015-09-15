@@ -17,10 +17,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/*body {
-	background-color: #B3B3B3;
-}*/
-
 nav > div > div > p {
 	padding-top: 14px;
 }
@@ -103,6 +99,13 @@ nav > div > div > p {
 	margin-top: 5vh;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+#process {
+	background-image: url(background.png);
+	background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 80vh;
 }
 
 #main > img, #stats > img, #ready > img {
