@@ -70,6 +70,7 @@ nav > div > div > p {
 	max-height: 100vh;
 	padding-top: 40px;
 	padding-bottom: 40px; 
+	overflow: scroll;
 }
 
 .right {
@@ -99,6 +100,15 @@ nav > div > div > p {
 	margin-top: 5vh;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.process-list {
+	list-style: none;
+}
+
+.process-list > li {
+	font-size: 20px;
+	margin-top: 10px;
 }
 
 #process {
