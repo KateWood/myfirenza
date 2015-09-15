@@ -28,11 +28,16 @@ class InquiriesController < ApplicationController
 	end
 
 	def update
-
+		if @inquiry.update(inquiry_params)
+			redirect_to inquiry_path(@inquiry)
+		else
+			render :edit
+		end
 	end
 
 	def destroy
-
+		@inquiry.destroy
+		redirect_to inquiries_path
 	end
 
 private
@@ -42,7 +47,7 @@ private
 	end
 
 	def inquiry_params
-		params.require(:inquiry).permit(:first_name, :last_name, :email, :phone, :city_of_interest, :state, :zip, :reason, :networth, :liquidity)
+		params.require(:inquiry).permit(:first_name, :last_name, :email, :phone, :city_of_interest, :state, :zip, :reason, :networth, :liquidity, :notes)
 	end
 end
 

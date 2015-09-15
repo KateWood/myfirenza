@@ -1,2 +1,13 @@
-<h1>Inquiries#update</h1>
-<p>Find me in app/views/inquiries/update.html.erb</p>
+<div class="container">
+
+	<h3>Add notes to <%= @inquiry.first_name %> <%= @inquiry.last_name %>'s Inquiry</h3>
+	<%= form_for(@inquiry) do |f| %>
+		<div class="form-group">
+			<%#= f.label :notes %>
+			<%= f.text_area :notes, :placeholder => "Add notes here.", :class => "large" %>
+		</div>
+		<div class="form-group">
+			<%= f.submit 'Add notes', :class => "btn btn-default" %>
+		</div>
+	<% end %>
+</div>
