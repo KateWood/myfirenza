@@ -36,12 +36,12 @@
 						<% if @inquiry.notes %>
 							<%= @inquiry.notes %>
 						<% else %>
-							<em>No notes yet. Edit inquiry to add notes.</em>
+							<em>No notes yet.</em>
 						<% end %>
 					</td>
 				</tr>
 				<tr>
-					<td><%= link_to 'Edit this inquiry', edit_inquiry_path(@inquiry), :class => "btn btn-success"  %></td><td><%= link_to 'Delete this inquiry', inquiry_path(@inquiry), method: :delete, data: { confirm: 'Are you sure? This cannot be undone.' }, :class => "btn btn-danger" %></td>
+					<td><%= link_to 'Add notes this inquiry', edit_inquiry_path(@inquiry), :class => "btn btn-success"  %></td><td><%= link_to 'Delete this inquiry', inquiry_path(@inquiry), method: :delete, data: { confirm: 'Are you sure? This cannot be undone.' }, :class => "btn btn-danger" %></td>
 				</tr>
 				<tr>
 					<td><%= link_to 'Back to list of inquiries', inquiries_path, :class => "btn btn-default"  %></td><td></td>
