@@ -32,7 +32,8 @@ class InquiriesController < ApplicationController
 	end
 
 	def destroy
-
+		@inquiry.destroy
+		redirect_to inquiries_path
 	end
 
 private

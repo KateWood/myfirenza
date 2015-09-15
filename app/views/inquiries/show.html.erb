@@ -6,18 +6,50 @@
 			<thead>
 			</thead>
 			<tbody>
-				<tr><td><strong>Date of Inquiry:</strong></td><td> <%= @inquiry.created_at.strftime("%b %d, %Y") %></td></tr>
-				<tr><td><strong>Name:</strong></td><td> <%= @inquiry.first_name %> <%= @inquiry.last_name %></td></tr>
-				<tr><td><strong>Email Address:</strong></td><td> <%= mail_to @inquiry.email %></td></tr>
-				<tr><td><strong>Phone Number:</strong></td><td> <%= @inquiry.phone %></td></tr>
-				<tr><td><strong>City of Interest:</strong></td><td> <%= @inquiry.city_of_interest %>, <%= @inquiry.state %> <%= @inquiry.zip %></td></tr>
-				<tr><td><strong>Reason for Interest:</strong></td><td> <%= @inquiry.reason %></td></tr>
-				<tr><td><strong>Net Worth:</strong></td><td> <%= @inquiry.networth %></td></tr>
-				<tr><td><strong>Liquidity:</strong></td><td> <%= @inquiry.liquidity %></td></tr>
+				<tr>
+					<td><strong>Date of Inquiry:</strong></td><td> <%= @inquiry.created_at.strftime("%b %d, %Y") %></td>
+				</tr>
+				<tr>
+					<td><strong>Name:</strong></td><td> <%= @inquiry.first_name %> <%= @inquiry.last_name %></td>
+				</tr>
+				<tr>
+					<td><strong>Email Address:</strong></td><td> <%= mail_to @inquiry.email %></td>
+				</tr>
+				<tr>
+					<td><strong>Phone Number:</strong></td><td> <%= @inquiry.phone %></td>
+				</tr>
+				<tr>
+					<td><strong>City of Interest:</strong></td><td> <%= @inquiry.city_of_interest %>, <%= @inquiry.state %> <%= @inquiry.zip %></td>
+				</tr>
+				<tr>
+					<td><strong>Reason for Interest:</strong></td><td> <%= @inquiry.reason %></td>
+				</tr>
+				<tr>
+					<td><strong>Net Worth:</strong></td><td> <%= @inquiry.networth %></td>
+				</tr>
+				<tr>
+					<td><strong>Liquidity:</strong></td><td> <%= @inquiry.liquidity %></td>
+				</tr>
+				<tr>
+					<td><strong>Notes: </strong></td>
+					<td>
+						<% if @inquiry.notes %>
+							<%= @inquiry.notes %>
+						<% else %>
+							<em>No notes yet. Edit inquiry to add notes.</em>
+						<% end %>
+					</td>
+				</tr>
+				<tr>
+					<td><%= link_to 'Edit this inquiry', edit_inquiry_path(@inquiry) %></td><td><%= link_to 'Delete this inquiry', inquiry_path(@inquiry), method: :delete, data: { confirm: 'Are you sure? This cannot be undone.' } %></td>
+				</tr>
+				<tr>
+					<td><%= link_to 'Back to list of inquiries', inquiries_path %></td><td></td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
-	<%= link_to 'Back', inquiries_path %>
+	
 
 </div>
 
