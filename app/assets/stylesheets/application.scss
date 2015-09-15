@@ -45,6 +45,31 @@ nav > div > div > p {
 	background-color: #E4332E;
 }
 
+.ready-slide {
+	background-image: url(ready.png);
+	background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.btn-firenza {
+	background-color: #E4332E;
+	border-color: #E4332E;
+	margin-top: 25px;
+	margin-right: 15px;
+	float: right;
+}
+
+.btn-firenza > a {
+	color: white;
+	font-size: 20px;
+}
+
+.btn-firenza:hover {
+	background-color: #E4332E;
+	border-color: #E4332E;
+}
+
 .slide {
 	max-height: 100vh;
 	padding-top: 40px;
