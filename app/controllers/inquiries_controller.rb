@@ -28,7 +28,11 @@ class InquiriesController < ApplicationController
 	end
 
 	def update
-
+		if @inquiry.update(inquiry_params)
+			redirect_to inquiry_path(@inquiry)
+		else
+			render :edit
+		end
 	end
 
 	def destroy

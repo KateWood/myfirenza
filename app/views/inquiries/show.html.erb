@@ -41,10 +41,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td><%= link_to 'Edit this inquiry', edit_inquiry_path(@inquiry) %></td><td><%= link_to 'Delete this inquiry', inquiry_path(@inquiry), method: :delete, data: { confirm: 'Are you sure? This cannot be undone.' } %></td>
+					<td><%= link_to 'Edit this inquiry', edit_inquiry_path(@inquiry), :class => "btn btn-success"  %></td><td><%= link_to 'Delete this inquiry', inquiry_path(@inquiry), method: :delete, data: { confirm: 'Are you sure? This cannot be undone.' }, :class => "btn btn-danger" %></td>
 				</tr>
 				<tr>
-					<td><%= link_to 'Back to list of inquiries', inquiries_path %></td><td></td>
+					<td><%= link_to 'Back to list of inquiries', inquiries_path, :class => "btn btn-default"  %></td><td></td>
 				</tr>
 			</tbody>
 		</table>
