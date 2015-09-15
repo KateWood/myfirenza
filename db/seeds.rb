@@ -8,4 +8,4 @@
 
 User.create(name: "Admin", email: "dndkpj@gmail.com", password: "crizza2015", password_confirmation: "crizza2015")
 
-Inquiry.create(first_name: "Kate", last_name: "Wood", email: "wb4charmed@yahoo.com", phone: "571-213-6495", city_of_interest: "Santa Clarita", state: "CA", zip: 91321, reason: "Testing this site and the inquiry input form.", networth: "Less than $30,000", liquidity: "Less than $30,000")
+Inquiry.create(first_name: "Kate", last_name: "Wood", email: "wb4charmed@yahoo.com", phone: "571-213-6495", city_of_interest: "Santa Clarita", state: "CA", zip: "91321", reason: "Testing this site and the inquiry input form.", networth: "Less than $30,000", liquidity: "Less than $30,000")
