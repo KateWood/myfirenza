@@ -42,6 +42,7 @@ nav > div > div > p {
 
 .slight-down {
 	margin-top: 14px;
+	background-color: #E4332E;
 }
 
 .slide {
@@ -78,12 +79,12 @@ nav > div > div > p {
 	margin-left: auto;
 }
 
-#main > img, #stats > img {
+#main > img, #stats > img, #ready > img {
 	width: 100vw;
 	margin: auto;
 }
 
-#contact {
+#contact, #process {
 	background-color: #E4332E;
 	padding-bottom: 5vh;
 }
