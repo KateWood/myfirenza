@@ -1,4 +1,8 @@
-<div class="container-fluid">
+<%= render 'pages/nav' %>
+
+<% if current_user %>
+
+	<div class="container-fluid down">
 
 	<h1><%= @inquiry.first_name %> <%= @inquiry.last_name %>'s Inquiry</h1>
 	<div cl"table-responsive">
@@ -49,8 +53,17 @@
 			</tbody>
 		</table>
 	</div>
-	
 
-</div>
+	</div>
+	
+<% else %>
+
+	<div class="no-access container">
+		<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+	</div>
+
+<% end %>
+
+
 
 
