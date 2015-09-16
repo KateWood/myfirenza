@@ -107,6 +107,13 @@ nav > div > div > p {
 	margin-top: 10px;
 }
 
+#process {
+	background-image: url(background.png);
+	background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
 #main > img, #stats > img, #ready > a > img {
 	width: 100vw;
 	margin: auto;
