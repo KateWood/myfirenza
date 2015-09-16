@@ -15,6 +15,7 @@
 			<% if current_user %>
 				<p class="nav navbar-nav navbar-left">
 					Logged in as: <%= link_to current_user.name, user_path(current_user), :class => "btn btn-default"  %> <%= link_to 'Log Out', logout_path, method: :delete, :class => "btn btn-default" %>
+					<em>This navigation bar will not be included in the live site.</em>
 				</p>
 				<!-- <ul class="nav navbar-nav navbar-right">
 					<li><a href="#main">Main</a></li>
