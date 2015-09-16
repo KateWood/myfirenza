@@ -32,6 +32,10 @@ nav > div > div > p {
 	text-align: center;
 }
 
+.main-link > a > img {
+	width: 100px;
+}
+
 .down {
 	margin-top: 33px;
 }
@@ -41,14 +45,7 @@ nav > div > div > p {
 	background-color: #E4332E;
 }
 
-.ready-slide {
-	background-image: url(ready.png);
-	background-size: 100vw;
-    background-repeat: no-repeat;
-    height: 80vh;
-}
-
-.btn-firenza {
+/*.btn-firenza {
 	background-color: #E4332E;
 	border-color: #E4332E;
 	margin-top: 25px;
@@ -64,13 +61,11 @@ nav > div > div > p {
 .btn-firenza:hover {
 	background-color: #E4332E;
 	border-color: #E4332E;
-}
+}*/
 
 .slide {
-	max-height: 100vh;
-	padding-top: 40px;
-	padding-bottom: 40px; 
-	overflow: scroll;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 .right {
@@ -114,11 +109,11 @@ nav > div > div > p {
 #process {
 	background-image: url(background.png);
 	background-size: 100vw;
+	background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
 }
 
-#main > img, #stats > img, #ready > img {
+#main > img, #stats > img, #ready > a > img {
 	width: 100vw;
 	margin: auto;
 }

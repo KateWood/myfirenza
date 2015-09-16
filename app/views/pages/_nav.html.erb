@@ -15,8 +15,9 @@
 			<% if current_user %>
 				<p class="nav navbar-nav navbar-left">
 					Logged in as: <%= link_to current_user.name, user_path(current_user), :class => "btn btn-default"  %> <%= link_to 'Log Out', logout_path, method: :delete, :class => "btn btn-default" %>
+					<em>This navigation bar will not be included in the customer facing site.</em>
 				</p>
-				<ul class="nav navbar-nav navbar-right">
+				<!-- <ul class="nav navbar-nav navbar-right">
 					<li><a href="#main">Main</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jump to... <span class="caret"></span></a>
@@ -27,7 +28,7 @@
 							<li><a href="#ready">Ready</a></li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
 			<% end %>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
