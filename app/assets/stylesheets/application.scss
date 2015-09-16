@@ -64,7 +64,6 @@ nav > div > div > p {
 }*/
 
 .slide {
-	min-height: 100vh;
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 }
@@ -110,8 +109,8 @@ nav > div > div > p {
 #process {
 	background-image: url(background.png);
 	background-size: 100vw;
+	background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
 }
 
 #main > img, #stats > img, #ready > a > img {
