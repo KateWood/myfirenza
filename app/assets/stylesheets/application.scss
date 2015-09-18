@@ -104,7 +104,7 @@ nav > div > div > p {
 .process-list > li {
 	font-size: 20px;
 	margin-top: 10px;
-	display: inline;
+	/*display: inline;*/
 }
 
 .process-list > li > img {
@@ -135,9 +135,7 @@ nav > div > div > p {
 
 #contact {
 	background-image: url('Firenza-Pizza-Logo.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	background-repeat: x-repeat;
 }
 
 
