@@ -104,11 +104,17 @@ nav > div > div > p {
 .process-list > li {
 	font-size: 20px;
 	margin-top: 10px;
+	display: inline;
+}
+
+.process-list > li > img {
+	max-height: 10vw;
+	display: inline;
 }
 
 #process {
 	background-image: url(background.png);
-	background-size: 100vw;
+	background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
 }
@@ -128,7 +134,7 @@ nav > div > div > p {
 }
 
 #contact {
-	background-image: url('Firenza-Logo.png');
+	background-image: url('Firenza-Pizza-Logo.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
