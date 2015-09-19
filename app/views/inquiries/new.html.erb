@@ -8,7 +8,43 @@
 
 		<h6><em>All fields are required.</em></h6>
 
-		<%= render 'form' %>
+		<div class="center">
+			<%= form_for(@inquiry) do |f| %>
+				<div class="form-group">
+					<%= f.label :first_name %>
+					<%= f.text_field :first_name, :placeholder => "First Name", :class => "inquiry-form" %>
+					<%= f.label :last_name %>
+					<%= f.text_field :last_name, :placeholder => "Last Name", :class => "inquiry-form" %>
+				</div>
+				<div class="form-group">
+					<%= f.label :email %>
+					<%= f.text_field :email, :placeholder => "Email Address", :class => "inquiry-form" %>
+					<%= f.label :phone %>
+					<%= f.text_field :phone, :placeholder => "Phone Number", :class => "inquiry-form" %>
+				</div>
+				<div class="form-group">
+					<%= f.label :city_of_interest %>
+					<%= f.text_field :city_of_interest, :placeholder => "City of Interest", :class => "inquiry-form" %>
+					<%= f.label :state %>
+					<%= f.select :state, options_for_select([["State", ""], "AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY", "Outside the US"]), :class => "inquiry-form" %>
+					<%= f.label :zip %>
+					<%= f.text_field :zip, :placeholder => "Zip Code", :class => "inquiry-form-small" %>
+				</div>
+				<div class="form-group">
+					<%= f.label :reason %>
+					<%= f.text_area :reason, :placeholder => "Why are you interested in owning a Firenza Pizza restaurant?", :class => "large" %>
+				</div>
+				<div class="form-group">
+					<%= f.label :networth %>
+					<%= f.select :networth, options_for_select([["Net Worth", ""], "Less than $30,000", "$30,000 - $50,000", "$50,000 - $75,000", "$75,000 - $100,000", "$100,000 - $200,000", "$200,000 - $500,000", "$500,000 - $1,000,000", "More than $1,000,000"]), :class => "inquiry-form" %>
+					<%= f.label :liquidity %>
+					<%= f.select :liquidity, options_for_select([["Liquidity", ""], "Less than $30,000", "$30,000 - $50,000", "$50,000 - $75,000", "$75,000 - $100,000", "$100,000 - $200,000", "$200,000 - $500,000", "$500,000 - $1,000,000", "More than $1,000,000"]), :class => "inquiry-form" %>
+				</div>
+				<div class="form-group">
+					<%= f.submit 'Request Information', :class => "btn btn-default", :class => "inquiry-form btn btn-default" %>
+				</div>
+			<% end %>
+		</div>
 
 	</div>
 
