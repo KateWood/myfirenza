@@ -112,6 +112,17 @@ nav > div > div > p {
 	display: inline;
 }
 
+.page-footer {
+	background-color: #E4332E;
+	margin-top: -5vh;
+	padding-bottom: 5vh;
+	color: white;
+}
+
+.page-footer > h6 > a {
+	color: white;
+}
+
 #process {
 	background-image: url(background.png);
 	background-size: cover;
@@ -122,11 +133,6 @@ nav > div > div > p {
 #main > img, #stats > img, #ready > a > img {
 	width: 100vw;
 	margin: auto;
-}
-
-#contact, #process {
-	background-color: #E4332E;
-	padding-bottom: 5vh;
 }
 
 #contact > h1, #contact > h4, #contact > h6 {
