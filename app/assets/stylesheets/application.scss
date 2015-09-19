@@ -17,6 +17,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+	background-color: #E4332E;
+}
+
 nav > div > div > p {
 	padding-top: 14px;
 }
@@ -38,6 +42,10 @@ nav > div > div > p {
 
 .down {
 	margin-top: 33px;
+	text-align: center;
+	background-image: url('Firenza-Pizza-Logo.png');
+	background-repeat: x-repeat;
+	height: 100vh;
 }
 
 .slight-down {
