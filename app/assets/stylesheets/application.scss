@@ -38,11 +38,6 @@ nav > div > div > p {
 
 .down {
 	margin-top: 33px;
-	text-align: center;
-	background-image: url('Firenza-Pizza-Logo.png');
-	background-color: #E4332E;
-	background-repeat: x-repeat;
-	height: 100vh;
 }
 
 .slight-down {
@@ -133,6 +128,15 @@ nav > div > div > p {
 	background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
+}
+
+#new-inquiry {
+	margin-top: 33px;
+	text-align: center;
+	background-image: url('Firenza-Pizza-Logo.png');
+	background-color: #E4332E;
+	background-repeat: x-repeat;
+	height: 100vh;
 }
 
 #main > img, #stats > img, #ready > a > img {
