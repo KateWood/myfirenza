@@ -13,7 +13,7 @@ class InquiriesController < ApplicationController
 	def create
 		@inquiry = Inquiry.new(inquiry_params)
 		if @inquiry.save
-			redirect_to home_path
+			redirect_to main_path
 		else
 			render :new
 		end

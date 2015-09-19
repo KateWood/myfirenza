@@ -1,0 +1,42 @@
+<%= render 'nav' %>
+
+<div class="slight-down">
+
+	<% if current_user %>
+
+		<div class="slide" id="main">
+			<%= render 'main' %>
+		</div>
+
+		<div class="slide" id="contact">
+			<%= render 'contact' %>
+		</div>
+
+		<div class="slide" id="stats">
+			<%= render 'stats' %>
+		</div>
+
+		<div class="slide" id="process">
+			<%= render 'process' %>
+		</div>
+
+		<div class="slide" id="ready">
+			<%= render 'ready' %>
+		</div>
+
+		<div class="page-footer">
+			<h6 class="col-md-4 center">&copy; 2015 Firenza Pizza Franchise LLC</h6>
+			<h6 class="col-md-4 center"><%= link_to 'Contact us!', new_inquiry_path %></h6>
+			<h6 class="col-md-4 center"><%= link_to 'Website not displaying correctly?', 'https://www.google.com/chrome/browser/desktop/index.html' %></h6>
+			<br>
+		</div>
+
+	<% else %>
+
+		<div class="no-access container">
+			<h4>Please <%= link_to 'log in', login_path %> to access this page.</h4>
+		</div>
+
+	<% end %>
+
+</div>
