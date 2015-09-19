@@ -24,11 +24,10 @@
 			<%= render 'ready' %>
 		</div>
 
-		<div>
-			<ul>
-				<li>&copy; 2015 Firenza Pizza Franchise LLC</li>
-				<li><%= link_to 'Website not displaying correctly?', 'https://www.google.com/chrome/browser/desktop/index.html' %></li>
-			</ul>
+		<div class="page-footer">
+			<h6 class="col-md-4">&copy; 2015 Firenza Pizza Franchise LLC</h6>
+			<h6 class="col-md-4"><%= link_to 'Website not displaying correctly?', 'https://www.google.com/chrome/browser/desktop/index.html' %></h6>
+			<h6 class="col-md-4"><%= link_to 'Contact us!', new_inquiry_path %></h6>
 		</div>
 
 	<% else %>
