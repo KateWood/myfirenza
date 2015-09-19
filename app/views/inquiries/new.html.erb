@@ -43,10 +43,12 @@
 					<%= f.select :liquidity, options_for_select([["Liquidity", ""], "Less than $30,000", "$30,000 - $50,000", "$50,000 - $75,000", "$75,000 - $100,000", "$100,000 - $200,000", "$200,000 - $500,000", "$500,000 - $1,000,000", "More than $1,000,000"]), :class => "inquiry-form" %>
 				</div>
 				<div class="form-group">
-					<%= f.submit 'Request Information', :class => "btn btn-default", :class => "inquiry-form btn btn-default" %>
+					<%= f.submit 'Request Information', :class => "inquiry-form btn btn-default" %>
 				</div>
 			<% end %>
 		</div>
+
+		<%= link_to "Back to main page", home_path, :class => "inquiry-form btn btn-default" %>
 
 	</div>
 
