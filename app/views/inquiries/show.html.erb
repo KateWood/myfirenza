@@ -27,7 +27,7 @@
 					<td><strong>Email Address:</strong></td><td> <%= mail_to @inquiry.email %></td>
 				</tr>
 				<tr>
-					<td><strong>Phone Number:</strong></td><td> <%= @inquiry.phone %></td>
+					<td><strong>Phone Number:</strong></td><td> <%= number_to_phone(@inquiry.phone) %></td>
 				</tr>
 				<tr>
 					<td><strong>City of Interest:</strong></td><td> <%= @inquiry.city_of_interest %>, <%= @inquiry.state %> <%= @inquiry.zip %></td>
