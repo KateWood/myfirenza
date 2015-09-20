@@ -123,6 +123,18 @@ nav > div > div > p {
 	color: white;
 }
 
+.inquiry-footer {
+	background-color: #E4332E;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
+
+.inquiry-footer > h6 > a {
+	color: white;
+}
+
 #process, #process1 {
 	background-image: url(background.png);
 	background-size: cover;
