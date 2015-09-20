@@ -37,7 +37,13 @@
 								<td><%= inquiry.reason %></td>
 								<td><%= inquiry.networth %></td>
 								<td><%= inquiry.liquidity %></td> -->
-								<td><%= inquiry.created_at.strftime("%b %d, %Y") %></td>
+								<td>
+									<% if inquiry.created_at > Time.now.beginning_of_day %>
+										Today (<%="#{time_ago_in_words(inquiry.created_at)} ago"%>)
+									<% else %>
+										<%= inquiry.created_at.strftime("%b %d, %Y") %>
+									<% end %>
+								</td>
 								<td><%= link_to 'Show', inquiry_path(inquiry), :class => "btn btn-primary" %></td>
 							</tr>
 						<% end %>

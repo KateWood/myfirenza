@@ -11,7 +11,14 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><strong>Date of Inquiry:</strong></td><td> <%= @inquiry.created_at.strftime("%b %d, %Y") %></td>
+					<td><strong>Date of Inquiry:</strong></td>
+					<% if @inquiry.created_at > Time.now.beginning_of_day %>
+						<td>Today (<%="#{time_ago_in_words(@inquiry.created_at)} ago"%>)</td>
+					<% else %>
+						<td><%= @inquiry.created_at.strftime("%b %d, %Y") %></td>
+					<% end %>
+					<%#= @inquiry.created_at.strftime("%b %d, %Y") %>
+					
 				</tr>
 				<tr>
 					<td><strong>Name:</strong></td><td> <%= @inquiry.first_name %> <%= @inquiry.last_name %></td>
@@ -20,7 +27,7 @@
 					<td><strong>Email Address:</strong></td><td> <%= mail_to @inquiry.email %></td>
 				</tr>
 				<tr>
-					<td><strong>Phone Number:</strong></td><td> <%= @inquiry.phone %></td>
+					<td><strong>Phone Number:</strong></td><td> <%= number_to_phone(@inquiry.phone) %></td>
 				</tr>
 				<tr>
 					<td><strong>City of Interest:</strong></td><td> <%= @inquiry.city_of_interest %>, <%= @inquiry.state %> <%= @inquiry.zip %></td>
