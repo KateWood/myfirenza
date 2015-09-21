@@ -14,8 +14,10 @@ class InquiriesController < ApplicationController
 		@inquiry = Inquiry.new(inquiry_params)
 		if @inquiry.save
 			redirect_to main_path
+			flash[:success] = "Thank you. Your contact submission was successful!"
 		else
 			render :new
+			flash[:error] = "There was a problem. Please try again. All fields are required."
 		end
 	end
 
