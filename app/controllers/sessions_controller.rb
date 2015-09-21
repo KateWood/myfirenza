@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
 			redirect_to user_path(user)
 		else
 			render :new
+			flash[:error] = "There was a problem. Please try again."
 		end
 	end
 
