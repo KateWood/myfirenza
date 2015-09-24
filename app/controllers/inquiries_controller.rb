@@ -13,7 +13,7 @@ class InquiriesController < ApplicationController
 	def create
 		@inquiry = Inquiry.new(inquiry_params)
 		if @inquiry.save
-			redirect_to main_path
+			redirect_to "/pages/main#contact1"
 			flash[:success] = "Thank you. Your contact submission was successful!"
 		else
 			render :new
