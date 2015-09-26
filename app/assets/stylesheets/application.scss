@@ -49,7 +49,7 @@ nav > div > div > p {
 	text-align: right;
 	margin-right: 30px;
 	margin-bottom: -50px;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 }
 
 /*.btn-firenza {
@@ -156,6 +156,10 @@ nav > div > div > p {
 	background-color: #E4332E;
 	background-repeat: x-repeat;
 	height: 100vh;
+}
+
+#main {
+	margin-bottom: -10vh;
 }
 
 #main > img, #main1 > img, #concept > a > img, #concept1 > a > img, #stats > img, #stats1 > img, #ready > a > img, #ready1 > a > img {
