@@ -30,6 +30,8 @@ gem 'better_errors'
 
 gem 'bootstrap-sass', '~> 3.3.4'
 
+gem 'nokogiri', '1.6.6.2'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
