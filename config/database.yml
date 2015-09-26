@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: firenza_production
-  username: firenza
+  username: rails
   password: <%= ENV['FIRENZA_DATABASE_PASSWORD'] %>
