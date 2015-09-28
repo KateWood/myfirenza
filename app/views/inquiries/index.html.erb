@@ -25,8 +25,20 @@
 					<% if @inquiries %>
 						<% @inquiries.each do |inquiry| %>
 							<tr>
-								<td><%= inquiry.first_name %></td>
-								<td><%= inquiry.last_name %></td>
+								<td>
+									<% if inquiry.first_name != "" %>
+										<%= inquiry.first_name %>
+									<% else %>
+										<em>No first name provided</em>
+									<% end %>
+								</td>
+								<td>
+									<% if inquiry.last_name != "" %>
+										<%= inquiry.last_name %>
+									<% else %>
+										<em>No last name provided</em>
+									<% end %>
+								</td>
 								<td><%= mail_to inquiry.email %></td>
 								<!-- <td><%= inquiry.phone %></td>
 								<td><%= inquiry.city_of_interest %></td>
