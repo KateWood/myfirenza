@@ -17,7 +17,7 @@ class InquiriesController < ApplicationController
 			flash[:success] = "Thank you. Your contact submission was successful!"
 		else
 			render :new
-			flash[:error] = "There was a problem. Please try again. All fields are required."
+			flash[:error] = "There was a problem. Please enter an email address."
 		end
 	end
 
