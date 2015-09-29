@@ -4,7 +4,103 @@
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-	<h2>New Inquiry Received at <%= link_to "myfirenza.com", "http://www.myfirenza.com" %></h2>
-	
+	<h1>New Inquiry Received at <%= link_to "myfirenza.com", "http://www.myfirenza.com" %></h1>
+	<h1>
+		<% if @inquiry.first_name != "" && @inquiry.last_name != "" %>
+			<%= @inquiry.first_name %> <%= @inquiry.last_name %>'s Inquiry
+		<% else %>
+			Inquiry (no name provided)
+		<% end %>
+	</h1>
+	<tbody>
+		<tr>
+			<%= @inquiry.created_at.strftime("%b %d, %Y") %>
+		</tr>
+		<tr>
+			<td><strong>Name:</strong></td><td> 
+				<% if @inquiry.first_name != "" && @inquiry.last_name != "" %>
+					<%= @inquiry.first_name %> <%= @inquiry.last_name %>
+				<% elsif @inquiry.first_name != "" %>
+					<%= @inquiry.first_name %>
+				<% elsif @inquiry.last_name != "" %>
+					Mr./Ms. <%= @inquiry.last_name %>
+				<% else %>
+					<em>No name provided</em>
+				<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Email Address:</strong></td><td> <%= mail_to @inquiry.email %></td>
+		</tr>
+		<tr>
+			<td><strong>Phone Number:</strong></td>
+			<td>
+				<% if @inquiry.phone != "" %>
+					<%= number_to_phone(@inquiry.phone) %>
+				<% else %>
+					<em>No phone number provided</em>
+				<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>City of Interest:</strong></td>
+			<td>
+				<% if @inquiry.city_of_interest != "" && @inquiry.state != "" && @inquiry.zip != "" %>
+					<%= @inquiry.city_of_interest %>, <%= @inquiry.state %> <%= @inquiry.zip %>
+				<% elsif @inquiry.city_of_interest != "" && @inquiry.state != "" %>
+					<%= @inquiry.city_of_interest %>, <%= @inquiry.state %>
+				<% elsif @inquiry.city_of_interest != "" && @inquiry.zip != "" %>
+					<%= @inquiry.city_of_interest %> (city), <%= @inquiry.zip %>
+				<% elsif @inquiry.state != "" && @inquiry.zip != "" %>
+					<%= @inquiry.state %> (state), <%= @inquiry.zip %>
+				<% elsif @inquiry.city_of_interest != "" %>
+					<%= @inquiry.city_of_interest %> (No state or zip code provided)
+				<% elsif @inquiry.state != "" %>
+					<%= @inquiry.state %> (No city or zip code provided)
+				<% elsif @inquiry.zip != "" %>
+					<%= @inquiry.zip %> (No city or state provided)
+				<% else %>
+					<em>No location provided</em>
+				<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Reason for Interest:</strong></td>
+			<td>
+				<% if @inquiry.reason != "" %>
+					<%= @inquiry.reason %>
+				<% else %>
+					<em>No reason provided</em>
+				<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Net Worth:</strong></td>
+			<td>
+				<% if @inquiry.networth != "" %>
+					<%= @inquiry.networth %>
+				<% else %>
+					<em>No net worth provided</em>
+				<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Liquidity:</strong></td>
+			<td>
+				<% if @inquiry.liquidity != "" %>
+					<%= @inquiry.liquidity %>
+				<% else %>
+					<em>No liquidity provided</em>
+				<% end %>
+			</td>
+		</tr>
+	</tbody>
+
+	<hr>
+	<%= link_to "Log in", @url %> to view this inquiry.
+
 </body>
 </html>
+
+
+
