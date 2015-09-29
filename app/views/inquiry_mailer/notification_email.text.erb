@@ -4,8 +4,6 @@ New Inquiry Received at <%= link_to "myfirenza.com", "http://www.myfirenza.com" 
 	<% else %>
 		Inquiry (no name provided)
 	<% end %>
-Date of Inquiry:
-	<%= @inquiry.created_at.strftime("%b %d, %Y") %>
 Name:
 	<% if @inquiry.first_name != "" && @inquiry.last_name != "" %>
 		<%= @inquiry.first_name %> <%= @inquiry.last_name %>
