@@ -13,6 +13,8 @@ class InquiriesController < ApplicationController
 	def create
 		@inquiry = Inquiry.new(inquiry_params)
 		if @inquiry.save
+			# Tell the UserMailer to send a welcome Email after save
+        	InquiryMailer.notification_email(@inquiry).deliver
 			redirect_to "/pages/main#contact1"
 			flash[:success] = "Thank you. Your contact submission was successful!"
 		else

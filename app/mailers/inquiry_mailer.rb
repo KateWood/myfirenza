@@ -4,7 +4,6 @@ class InquiryMailer < ApplicationMailer
 	def notification_email(inquiry)
 		@inquiry = inquiry
 		@url = "http://myfirenza.com/login"
-		mail(:to => "dave@firenzapizza.com", :subject => "You have received a new inquiry on myfirenza.com")
-		mail(:to => "dbaer@firenzapizza.com", :subject => "You have received a new inquiry on myfirenza.com")		
+		mail(:to => "dave@firenzapizza.com, dbaer@firenzapizza.com", :subject => "You have received a new inquiry on myfirenza.com")
 	end
 end
