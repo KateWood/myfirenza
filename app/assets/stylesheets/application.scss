@@ -137,6 +137,8 @@ nav > div > div > p {
 .orange {
 	background-color: #E4332E;
 	overflow: scroll;
+	background-image: url('Firenza-Pizza-Logo.png');
+	background-repeat: x-repeat;
 }
 
 .video {
@@ -171,6 +173,14 @@ nav > div > div > p {
 
 .thumbnail:hover {
 	opacity: 0.5;
+}
+
+.carousel-inner > .item > img {
+	height: 90vh;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
 }
 
 #photos {
