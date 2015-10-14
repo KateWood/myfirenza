@@ -136,10 +136,20 @@ nav > div > div > p {
 
 .orange {
 	background-color: #E4332E;
-	min-height: 100vh;
 }
 
-.inquiry-footer, .gallery-footer {
+.video {
+	padding: 25px;
+}
+
+.gallery-footer {
+	background-color: #E4332E;
+	width: 100%;
+	color: white;
+	padding-bottom: 5vh;
+}
+
+.inquiry-footer {
 	background-color: #E4332E;
 	position: fixed;
 	bottom: 0;
