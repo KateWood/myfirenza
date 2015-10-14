@@ -146,6 +146,25 @@ nav > div > div > p {
 	color: white;
 }
 
+.thumbnail {
+	height: 300px;
+	background-size: 100%;
+	border: none;
+	border-radius: 10px;
+}
+
+.thumbnail:hover {
+	opacity: 0.5;
+}
+
+#photos {
+	background-image: url('Photo_Thumbnail.png');
+}
+
+#videos {
+	background-image: url('Video_Thumbnail.png');
+}
+
 #process, #process1 {
 	background-image: url(background.png);
 	background-size: cover;
@@ -161,8 +180,12 @@ nav > div > div > p {
 	height: 100vh;
 }
 
-#main {
+#main, #gallery {
 	margin-bottom: -10vh;
+}
+
+#gallery {
+	margin-top: -5vh;
 }
 
 #main > img, #main1 > img, #concept > a > img, #concept1 > a > img, #stats > img, #stats1 > img, #ready > a > img, #ready1 > a > img {
@@ -170,7 +193,7 @@ nav > div > div > p {
 	margin: auto;
 }
 
-#contact > h1, #contact > h4, #contact > h6, #contact1 > h1, #contact1 > h4, #contact1 > h6, #gallery > h1 {
+#contact > h1, #contact > h4, #contact > h6, #contact1 > h1, #contact1 > h4, #contact1 > h6, #gallery > h1, #gallery > .col-lg-12 > .col-sm-5 > h3 {
 	text-align: center;
 }
 
