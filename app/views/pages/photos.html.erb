@@ -14,7 +14,11 @@
 		<div class="cushion"></div>
 	<% end %>
 
-	<h1 class="center">Photo Gallery</h1>
+	<div class="col-sm-12">
+		<h5 class="col-sm-4 center"><%= link_to "Back to main page", home_path %></h5>
+		<h1 class="col-sm-4 center up">Photo Gallery</h1>
+		<h5 class="col-sm-4 center"><%= link_to "Go to Video Gallery", videos_path %></h5>
+	</div>	
 
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -40,13 +44,13 @@
 				<%= image_tag 'gallery4.png', :class => "img-responsive center-block" %>
 			</div>
 			<div class="item">
-				<%= image_tag 'gallery5.jpg', :class => "img-responsive center-block" %>
+				<%= image_tag 'gallery5.png', :class => "img-responsive center-block" %>
 			</div>
 			<div class="item">
-				<%= image_tag 'gallery6.jpg', :class => "img-responsive center-block" %>
+				<%= image_tag 'gallery6.png', :class => "img-responsive center-block" %>
 			</div>
 			<div class="item">
-				<%= image_tag 'gallery7.jpg', :class => "img-responsive center-block" %>
+				<%= image_tag 'gallery7.png', :class => "img-responsive center-block" %>
 			</div>
 		</div>
 

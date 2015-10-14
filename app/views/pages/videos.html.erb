@@ -14,10 +14,15 @@
 		<div class="cushion"></div>
 	<% end %>
 
-	<h1 class="center">Video Gallery</h1>
+	<div class="col-sm-12">
+		<h5 class="col-sm-4 center"><%= link_to "Back to main page", home_path %></h5>
+		<h1 class="col-sm-4 center up">Video Gallery</h1>
+		<h5 class="col-sm-4 center"><%= link_to "Go to Photo Gallery", photos_path %></h5>
+	</div>
+
 	<div class="col-lg-12 center video">
 		<h3 class="center">Order Process</h3>
-		<%= video_tag 'order_process.MOV', :size => "640x360", :controls => true, :autobuffer => true %>
+		<%= video_tag 'order_process.mp4', :size => "640x360", :controls => true, :autobuffer => true %>
 	</div>
 	<div class="col-lg-12 center video">
 		<h3 class="center">Coming Soon</h3>

@@ -21,6 +21,10 @@ nav > div > div > p {
 	padding-top: 14px;
 }
 
+body {
+	color: black;
+}
+
 .no-access {
 	margin-top: 50px;
 }
@@ -86,6 +90,14 @@ nav > div > div > p {
 
 .center {
 	text-align: center;
+}
+
+.center > a, .center > a:hover {
+	color: black;
+}
+
+.up {
+	margin-top: 0px;
 }
 
 .large {
