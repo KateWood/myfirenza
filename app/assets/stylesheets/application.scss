@@ -134,7 +134,12 @@ nav > div > div > p {
 	color: white;
 }
 
-.inquiry-footer {
+.orange {
+	background-color: #E4332E;
+	min-height: 100vh;
+}
+
+.inquiry-footer, .gallery-footer {
 	background-color: #E4332E;
 	position: fixed;
 	bottom: 0;
@@ -142,7 +147,7 @@ nav > div > div > p {
 	color: white;
 }
 
-.inquiry-footer > h6 > a {
+.inquiry-footer > h6 > a, .gallery-footer > h6 > a {
 	color: white;
 }
 
