@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get 'pages/home', as: :home
   get 'pages/main', as: :main
 
+  get 'pages/photos', as: :photos
+  get 'pages/videos', as: :videos
+
   resources :inquiries
 
   get '/login'     => 'sessions#new'
