@@ -12,3 +12,7 @@
 !/log/.keep
 /tmp
 .ssh
+.bash_history
+.bash_logout
+.bashrc
+.profile
