@@ -11,8 +11,9 @@
 /log/*
 !/log/.keep
 /tmp
-.ssh
-.bash_history
-.bash_logout
-.bashrc
-.profile
+/.bash_profile
+/.bash_history
+/.ssh
+/.bash_logout
+/.bashrc
+/.profile
