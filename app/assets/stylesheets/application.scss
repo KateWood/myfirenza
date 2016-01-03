@@ -197,6 +197,23 @@ body {
 	background-image: none;
 }
 
+.col-md-10 > a > img {
+	max-width: 100%;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.modal {
+	text-align: left;
+}
+
+.modal-body > .col-md-6 > img {
+	max-width: 75vw;
+	margin: 5px;
+	margin-right: 25px;
+	border-radius: 5px;
+}
+
 #photos {
 	background-image: url('Photo_Thumbnail.png');
 }
@@ -233,13 +250,13 @@ body {
 	margin: auto;
 }
 
-#contact > h1, #contact > h4, #contact > h6, #contact1 > h1, #contact1 > h4, #contact1 > h6, #gallery > h1, #gallery > .col-lg-12 > .col-sm-5 > h3 {
-	text-align: center;
-}
-
 #contact, #contact1 {
 	background-image: url('Firenza-Pizza-Logo.png');
 	background-repeat: x-repeat;
+}
+
+#leadership, #leadership1 {
+	padding-top: 0;
 }
 
 
