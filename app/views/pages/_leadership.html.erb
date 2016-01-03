@@ -2,26 +2,32 @@
 
 <br>
 
-<!-- <table>
-	<tr>
-		<td>Dave Wood | CEO</td>
-		<td>Dave Baer | President</td>
-		<td>Steve Schreiber | Director of Operations</td>
-		<td>Christopher Lynne | Director of Marketing</td>
-	</tr>
-	<tr>
-		<td class="headshot"><%= image_tag 'davew_thumb.png', :title => "Dave Wood headshot" %></td>
-		<td class="headshot"><%= image_tag 'daveb_thumb.png', :title => "Dave Baer headshot" %></td>
-		<td class="headshot"><%= image_tag 'steve_thumb.png', :title => "Steve Schreiber headshot" %></td>
-		<td class="headshot"><%= image_tag 'chris_thumb.png', :title => "Christopher Lynne headshot" %></td>
-	</tr>
-</table> -->
-
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h5>Dave Wood | CEO</h5>
+		<h4>Dave Wood</h4><h5>CEO</h5>
 		<%= image_tag 'davew_thumb.png', :title => "Dave Wood headshot" %>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container-fluid">
+					<h3>Dave Wood | CEO</h3>
+					<%= image_tag 'davew.png', :title => "Dave Wood photo" %>
+					<ul>
+						<li>1980 - Started delivering pizzas for Domino's in college</li>
+						<li>1981 - Promoted to General Manager of one of the highest volume Domino's in the country</li>
+						<li>1983 - Promoted to run 30 Domino's in NC, Atlanta and San Diego</li>
+						<li>1985 - Started my own franchise with Domino's</li>
+						<li>Won virtually every award for excellence Domino's gives, including 15 IFA Gold "Frannies"</li>
+						<li>Sold 17 locations at end of 2012</li>
+						<li>2013 and 14 - consulted in various businesses including a frozen yogurt chain, a Jersey Mike's Area Developer for all of Baltimore and DC DMAs (which currently has over 40 locations), a business telephone company and two technology companies</li>
+						<li>In late summer 2014, decided to start our own fast casual pizza chain to do it better than the others</li>
+						<li>Teamed up with my long time operating partner, Dave Baer, and opened first location in March 2015</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="col-md-1"></div>
 </div>
@@ -29,7 +35,7 @@
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h5>Dave Baer | President</h5>
+		<h4>Dave Baer</h4><h5>President</h5>
 		<%= image_tag 'daveb_thumb.png', :title => "Dave Baer headshot" %>
 	</div>
 	<div class="col-md-1"></div>
@@ -38,7 +44,7 @@
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h5>Steve Schreiber | Director of Operations</h5>
+		<h4>Steve Schreiber</h4><h5>Director of Operations</h5>
 		<%= image_tag 'steve_thumb.png', :title => "Steve Schreiber headshot" %>
 	</div>
 	<div class="col-md-1"></div>
@@ -47,7 +53,7 @@
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h5>Christopher Lynne | Director of Marketing</h5>
+		<h4>Christopher Lynne</h4><h5>Director of Marketing</h5>
 		<%= image_tag 'chris_thumb.png', :title => "Christopher Lynne headshot" %>
 	</div>
 	<div class="col-md-1"></div>

@@ -200,6 +200,18 @@ body {
 .col-md-10 > img {
 	max-width: 100%;
 	margin: auto;
+	border-radius: 5px;
+}
+
+.modal {
+	text-align: left;
+}
+
+.modal-content > img {
+	float: left;
+	margin: 5px;
+	margin-right: 25px;
+	border-radius: 5px;
 }
 
 #photos {
