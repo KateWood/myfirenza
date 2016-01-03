@@ -5,11 +5,14 @@
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h4>Dave Wood</h4><h5>CEO</h5>
-		<%= image_tag 'davew_thumb.png', :title => "Dave Wood headshot" %>
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
-
-		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<a href="#dw-modal" role="button" data-toggle="modal">
+			<h4>Dave Wood</h4>
+		</a>
+		<h5>CEO</h5>
+		<a href="#dw-modal" role="button" data-toggle="modal">
+			<%= image_tag 'davew_thumb.png', :title => "Dave Wood headshot" %>
+		</a>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="dw-modal">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content container-fluid">
 					<h3>Dave Wood | CEO</h3>
