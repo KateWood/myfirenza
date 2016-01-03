@@ -43,8 +43,36 @@
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h4>Dave Baer</h4><h5>President</h5>
-		<%= image_tag 'daveb_thumb.png', :title => "Dave Baer headshot" %>
+		<a href="#db-modal" role="button" data-toggle="modal">
+			<h4>Dave Baer</h4>
+		</a>
+		<h5>President</h5>
+		<a href="#db-modal" role="button" data-toggle="modal">
+			<%= image_tag 'daveb_thumb.png', :title => "Dave Wood headshot" %>
+		</a>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="db-modal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container-fluid">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Dave Baer | President</h4>
+					</div>
+					<div class="modal-body">
+						<%= image_tag 'daveb.png', :title => "Dave Wood photo" %>
+						<ul>
+							<li>Started as a driver for Domino’s Pizza while in college 1991</li>
+							<li>Worked in Business Finance after college (missed pizza)</li>
+							<li>Managed Domino’s Pizza store in 1991 Rookie manager of the year</li>
+							<li>From 1992-1998 held positions of Supervisor, Senior Supervisor and Training Director of Corporate operations Domino’s Pizza</li>
+							<li>November 1998 started working for Dave Wood a Domino’s Franchisee</li>
+							<li>1998-2012 Became VP of Operation and grew Dave Wood’s company to 17 stores and won every award in Domino’s Pizza including Supervisor of the year</li>
+							<li>From 2013-2014 Director of Operations Zinga Franchise group and multi-store franchisee</li>
+							<li>From 2014 to present President of Firenza Pizza</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="col-md-1"></div>
 </div>
@@ -55,6 +83,7 @@
 		<h4>Steve Schreiber</h4><h5>Director of Operations</h5>
 		<%= image_tag 'steve_thumb.png', :title => "Steve Schreiber headshot" %>
 	</div>
+	
 	<div class="col-md-1"></div>
 </div>
 
