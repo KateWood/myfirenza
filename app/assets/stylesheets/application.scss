@@ -197,6 +197,11 @@ body {
 	background-image: none;
 }
 
+.col-md-10 > img {
+	max-width: 100%;
+	margin: auto;
+}
+
 #photos {
 	background-image: url('Photo_Thumbnail.png');
 }
