@@ -207,8 +207,7 @@ body {
 	text-align: left;
 }
 
-.modal-body > img {
-	float: left;
+.modal-body > .col-md-6 > img {
 	max-width: 75vw;
 	margin: 5px;
 	margin-right: 25px;
