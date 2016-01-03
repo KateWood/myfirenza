@@ -119,8 +119,27 @@
 <div class="col-md-3 col-sm-6">
 	<div class="col-md-1"></div>
 	<div class="col-md-10 center">
-		<h4>Christopher Lynne</h4><h5>Director of Marketing</h5>
-		<%= image_tag 'chris_thumb.png', :title => "Christopher Lynne headshot" %>
+		<a href="#chris-modal" role="button" data-toggle="modal">
+			<h4>Christopher Lynne</h4>
+		</a>
+		<h5>Director of Marketing</h5>
+		<a href="#chris-modal" role="button" data-toggle="modal">
+			<%= image_tag 'chris_thumb.png', :title => "Christopher Lynne headshot" %>
+		</a>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="chris-modal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content container-fluid">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Christopher Lynne | Director of Marketing</h4>
+					</div>
+					<div class="modal-body">
+						<%= image_tag 'chris.png', :title => "Christopher Lynne photo" %>
+						<p>Christopher began his career in business at the age of 18 when he launched a successful clothing company.  He studied Communication Design at Universities in New York and Sydney, Australia before taking his experience to Denver, CO where he has been helping fast-casual brands grow for almost 10 years.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="col-md-1"></div>
 </div>
