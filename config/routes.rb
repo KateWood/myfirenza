@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post '/login'    => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
 
-  
+  get "/info" => redirect("http://unbouncepages.com/firenza-pizza-franchise-owners/")
 
   get 'users/:id' => 'users#show', as: :user
   # The priority is based upon order of creation: first created -> highest priority.
