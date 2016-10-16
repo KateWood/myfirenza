@@ -17,3 +17,8 @@
 /.bash_logout
 /.bashrc
 /.profile
+/.DS_Store
+/app/.DS_Store
+/app/assets/.DS_Store
+/app/assets/images/.DS_Store
+/app/assets/videos/.DS_Store
