@@ -25,6 +25,10 @@ body {
 	color: black;
 }
 
+input[pattern]:invalid{
+  color:red;
+}
+
 .no-access {
 	margin-top: 50px;
 }
@@ -268,9 +272,3 @@ body {
 #leadership, #leadership1 {
 	padding-top: 0;
 }
-
-
-
-
-
-
