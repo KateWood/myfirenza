@@ -24,6 +24,9 @@
 				<%= f.label :last_name %>
 				<%= f.text_field :last_name, :placeholder => "Last Name", :class => "inquiry-form" %>
 			</div>
+      <div class="hidden">
+  			<%= f.check_box :bot %>
+  		</div>
 			<div class="form-group">
 				<%= f.label :email %>
 				<%= f.text_field :email, :placeholder => "Email Address", :class => "inquiry-form" %>
@@ -65,5 +68,3 @@
 	</div>
 
 </div>
-
-

@@ -12,14 +12,16 @@ class InquiriesController < ApplicationController
 
 	def create
 		@inquiry = Inquiry.new(inquiry_params)
-		if @inquiry.save
+		if !@inquiry.bot && @inquiry.save
 			# Tell the UserMailer to send a welcome Email after save
-        	InquiryMailer.notification_email(@inquiry).deliver
+      InquiryMailer.notification_email(@inquiry).deliver
 			redirect_to "/pages/main#contact1"
 			flash[:success] = "Thank you. Your contact submission was successful!"
+		elsif @inquiry.bot
+			redirect_to "/pages/main#contact1"
 		else
 			render :new
-			flash[:error] = "There was a problem. Please enter an email address."
+			flash[:error] = "There was a problem. Please complete all fields."
 		end
 	end
 
@@ -28,7 +30,7 @@ class InquiriesController < ApplicationController
 	end
 
 	def edit
-		
+
 	end
 
 	def update
@@ -51,7 +53,6 @@ private
 	end
 
 	def inquiry_params
-		params.require(:inquiry).permit(:first_name, :last_name, :email, :phone, :city_of_interest, :state, :zip, :reason, :networth, :liquidity, :notes)
+		params.require(:inquiry).permit(:first_name, :last_name, :email, :phone, :city_of_interest, :state, :zip, :reason, :networth, :liquidity, :notes, :bot)
 	end
 end
-
