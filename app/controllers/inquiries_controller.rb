@@ -3,7 +3,7 @@ class InquiriesController < ApplicationController
 	before_action :set_inquiry, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@inquiries = Inquiry.all
+		@inquiries = Inquiry.order('created_at DESC')
 	end
 
 	def new
